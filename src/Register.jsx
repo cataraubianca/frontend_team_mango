@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Title } from "./Title";
 
 
 export const Register = (props) => {
@@ -15,6 +16,7 @@ export const Register = (props) => {
 
     return (
         <div className="auth-form-container">
+            <Title />
             <h2>Register</h2>
             <form className="register-form" onSubmit={handleSubmit}>
                 <label htmlFor="firstname">First Name:</label>

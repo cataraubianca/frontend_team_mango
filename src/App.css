@@ -4,7 +4,9 @@
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-  color:white;
+  background-color: rgb(251, 230, 230);
+  font-family: "Comic Sans MS", "Comic Sans", cursive; 
+  font-style: comic sans ms;
 }
 
 .auth-form-container, .login-form, .register-form {
@@ -12,17 +14,37 @@
   flex-direction: column;
 }
 
-.auth-form-container{
-  background-image: linear-gradient(79deg, #4b5ef4, #d79afb 48%, #ffe8c3);
+ .auth-form-container{
+  width: 300px;
+  height: 500px;
+  position: relative;
+  left: -70px;
+  border-style: outset;
+  border-width: 4px;
+  border-color: rgb(191, 190, 200);
+}  
+
+.login-form {
+  position: relative;
+  top: -20px;
+}
+
+.div-login {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap :7rem;
+}
+
+.title-login {
+  top: -40px;
 }
 
 
 @media screen and (min-width: 600px) {
   .auth-form-container {
-    padding: 5rem;
-    border: 2px solid rgb(0, 0, 0);
+    padding: 3rem;
     border-radius: 10px;
-    margin: 0.5rem;
+    margin: 2rem;
   }
 }
 
@@ -34,8 +56,12 @@ label {
 input {
   margin: 0.5rem 0;
   padding: 1rem;
-  border: none;
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 10px;
+  background-color: rgb(251, 230, 230);
+  height: 10px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive; 
+  font-style: comic sans ms;
 }
 
 button {
@@ -43,14 +69,36 @@ button {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
+  border: 2px solid rgb(0, 0, 0);
   cursor: pointer;
-  color: #2720a9;
+  color: #000000;
   text-decoration:bold;
+  font-family: "Comic Sans MS", "Comic Sans", cursive; 
+  font-style: comic sans ms;
 }
 
 
 .link-btn {
   background: none;
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: underline;
+  position: relative;
+  top: 35px;
+  border:none;
+  font-style: italic;
+} 
+
+.login-btn {
+  background-color: rgb(127, 206, 255);
+  position: relative;
+  top: 60px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 10px;
+  
+}
+
+.reading {
+  position: relative;
+  top: 100px;
 }
