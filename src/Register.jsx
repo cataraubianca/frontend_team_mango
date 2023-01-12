@@ -42,10 +42,10 @@ export const Register = (props) => {
                     <label htmlFor="password">Confirm Password:</label>
                     <input className="input-register" value = {confirmpass} onChange={(e) => setConfirmPass(e.target.value)} placeholder="********" id="confirmpass" name="confirmpass" />
                     
-                    <button className="register-btn" type="submit">Register</button>
+                    <button className="register-btn" type="submit"><b>Register</b></button>
                 </form>
 
-                <button className="link-btn" onClick={() => props.onFormSwitch('login')}>Already have an account? Log in here.</button>
+                <button className="link-btn-register" onClick={() => props.onFormSwitch('login')}>Already have an account? Login here.</button>
             </div>
         </div>
     )
