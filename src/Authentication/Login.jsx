@@ -16,10 +16,9 @@ export const Login = (props) => {
     return (
         <div className="div-login">   
             <div>
-              ` <Reading className="reading"/>
+                <Reading className="reading"/>
                 <h1 className="title"> BOOKGRAM </h1>
             </div>
-
             <div className="auth-form-container-login">
                 <form className="login-form" onSubmit={handleSubmit}>
                     <div className="avatar"> <Avatar /> </div>
@@ -32,10 +31,12 @@ export const Login = (props) => {
                     <label htmlFor="password">Password:</label>
                     <input className="input-login" value = {pass} onChange={(e) => setPass(e.target.value)}type="password" placeholder="********" id="password" name="password" />
                     
+                    <button className="link-btn-recover" onClick={() => props.onFormSwitch('recover')}>Forgot password?</button>
+
                     <button className="login-btn" type="submit"><b>Login</b></button>
                 </form>
 
-                <button className="link-btn" onClick={() => props.onFormSwitch('register')}>Don't have an account? Register here.</button>
+                <button className="link-btn-login" onClick={() => props.onFormSwitch('register')}>Don't have an account? Register here.</button>
             </div>
         </div>
     )

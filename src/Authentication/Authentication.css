@@ -122,24 +122,44 @@ button {
 }
 
 
-.link-btn {
+.link-btn-login {
   background: none;
   color: rgb(0, 0, 0);
   text-decoration: underline;
   position: relative;
-  top: 35px;
+  top: -2px;
   border:none;
   font-style: italic;
 } 
 
+.link-btn-register {
+  background: none;
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+  position: relative;
+  top: 26px;
+  border:none;
+  font-style: italic;
+} 
+
+.link-btn-recover {
+  background: none;
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+  position: relative;
+  top: -20px;
+  border:none;
+  font-style: italic;
+} 
+
+
 .login-btn {
   background-color: #1ab5fc;
   position: relative;
-  top: 60px;
+  top: 30px;
   text-align: center;
   font-size: 20px;
   line-height: 10px;
-  
 }
 
 .register-btn {
